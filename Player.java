@@ -16,6 +16,8 @@ public class Player {
   // ===== CONFLICT ZONE =====
   // Add your new fields directly below this line.
 
+  private int gold;
+
   public Player(Room room){
     currentRoom=room;
     inventory=new ArrayList<>();
@@ -27,4 +29,6 @@ public class Player {
   public void addItem(Item item){ inventory.add(item); }
   public int getScore(){ return score; }
   public void addScore(int points){ score+=points; }
+  public int getGold(){return gold; }
+  public void addGold(int amount){gold += amount; }
 }
