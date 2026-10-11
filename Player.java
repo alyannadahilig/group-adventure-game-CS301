@@ -15,12 +15,12 @@ public class Player {
 
   // ===== CONFLICT ZONE =====
   // Add your new fields directly below this line.
-  private int reputation;
+  private int reputation; // Student b (Alyanna) added field
 
   public Player(Room room){
     currentRoom=room;
     inventory=new ArrayList<>();
-    reputation=0;
+    reputation=0; // Student b (Alyanna) added field
   }
 
   public Room getCurrentRoom(){ return currentRoom; }

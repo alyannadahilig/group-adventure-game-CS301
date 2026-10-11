@@ -24,14 +24,14 @@ public class CommandProcessor {
   }
   // TODO: Students add commands HERE.
 
-  // Student B: Display the map of the game world
-  if(command.equalsIgnoreCase("map")){
-    System.out.println("~~~ WORLD MAP ~~~");
-    System.out.println("Village - North: Forest");
-    System.out.println("Forest - South: Village, East: Cave");
-    System.out.println("Cave - West: Forest");
-    System.out.println("Tower - Look for nearby exits");
-    System.out.println("Lake - Look for nearby exits");
+    // Aly: Display the map of the game world
+    if(command.equalsIgnoreCase("map")){
+        System.out.println("~~~ WORLD MAP ~~~");
+        System.out.println("Village - North: Forest");
+        System.out.println("Forest - South: Village, East: Cave");
+        System.out.println("Cave - West: Forest");
+        System.out.println("Tower - Look for nearby exits");
+        System.out.println("Lake - Look for nearby exits");
     return true;
     }
 
@@ -48,7 +48,6 @@ public class CommandProcessor {
         }
         return true;
     }
-
 
     // Aly: Allow the player to pick up items
     if(command.toLowerCase().startsWith("take ")){

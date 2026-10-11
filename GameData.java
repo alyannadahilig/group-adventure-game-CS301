@@ -32,7 +32,7 @@ public class GameData {
   // TODO Student A room additions
   // TODO Student B item additions
 
-  // Food item found in the Forest
+    // Food item found in the Forest
     forest.getItems().add(new Item("Wild Berries", "Fresh berries that restore energy."));
 
     // Useful item found in the Tower
