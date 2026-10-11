@@ -15,10 +15,12 @@ public class Player {
 
   // ===== CONFLICT ZONE =====
   // Add your new fields directly below this line.
+  private int reputation;
 
   public Player(Room room){
     currentRoom=room;
     inventory=new ArrayList<>();
+    reputation=0;
   }
 
   public Room getCurrentRoom(){ return currentRoom; }
@@ -27,4 +29,15 @@ public class Player {
   public void addItem(Item item){ inventory.add(item); }
   public int getScore(){ return score; }
   public void addScore(int points){ score+=points; }
+
+  // Returns the player's current reputation
+  public int getReputation(){
+    return reputation;
+  }
+  
+  // Adds points to the player's reputation
+  public void addReputation(int points){
+    reputation += points;
+  }
+
 }
