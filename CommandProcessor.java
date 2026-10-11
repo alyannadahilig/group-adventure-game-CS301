@@ -19,10 +19,15 @@ public class CommandProcessor {
    return true;
   }
   if(command.equalsIgnoreCase("help")){
-   System.out.println("look inventory help quit");
+   System.out.println("look inventory score help quit");
    return true;
   }
   // TODO: Students add commands HERE.
+  if(command.equalsIgnoreCase("score")){
+   System.out.println("Score: " + player.getScore());
+   System.out.println("Gold: " + player.getGold());
+   return true;
+}
   return false;
  }
 }
