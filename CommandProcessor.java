@@ -27,7 +27,7 @@ public class CommandProcessor {
    System.out.println("Score: " + player.getScore());
    System.out.println("Gold: " + player.getGold());
    return true;
-}
+  }
   return false;
  }
 }

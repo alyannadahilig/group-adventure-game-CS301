@@ -15,7 +15,8 @@ public class GameData {
   Room cave=new Room("Cave","A dark cave extends underground.");
   Room tower=new Room("Tower","An abandoned watch tower.");
   Room lake=new Room("Lake","A misty lake.");
-  Room marketplace = new Room("Marketplace", "A busy marketplace filled with merchants and shops.");Room castle = new Room("Castle", "An old castle with tall stone walls.");
+  Room marketplace = new Room("Marketplace", "A busy marketplace filled with merchants and shops.");
+  Room castle = new Room("Castle", "An old castle with tall stone walls.");
   Room garden = new Room("Garden", "A quiet garden filled with flowers and trees.");
 
   village.addExit("north","Forest");
@@ -26,8 +27,8 @@ public class GameData {
   village.addExit("east", "Castle");
   castle.addExit("west", "Village");
 
-castle.addExit("north", "Garden");
-garden.addExit("south", "Castle");
+  castle.addExit("north", "Garden");
+  garden.addExit("south", "Castle");
 
   village.getItems().add(new Item("Map","Shows local paths."));
   cave.getItems().add(new Item("Key","Opens a locked door."));
