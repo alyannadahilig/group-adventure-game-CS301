@@ -19,10 +19,56 @@ public class CommandProcessor {
    return true;
   }
   if(command.equalsIgnoreCase("help")){
-   System.out.println("look inventory help quit");
+   System.out.println("look inventory map go take help quit");
    return true;
   }
   // TODO: Students add commands HERE.
+
+  // Student B: Display the map of the game world
+  if(command.equalsIgnoreCase("map")){
+    System.out.println("~~~ WORLD MAP ~~~");
+    System.out.println("Village - North: Forest");
+    System.out.println("Forest - South: Village, East: Cave");
+    System.out.println("Cave - West: Forest");
+    System.out.println("Tower - Look for nearby exits");
+    System.out.println("Lake - Look for nearby exits");
+    return true;
+    }
+
+    // Aly: Move the player to another room
+    if(command.startsWith("go ")){
+        String direction = command.substring(3).trim().toLowerCase();
+        String nextRoom = player.getCurrentRoom().getExits().get(direction);
+
+        if(nextRoom == null){
+            System.out.println("You cannot go that way.");
+        } else {
+            player.enterRoom(world.getRoom(nextRoom));
+            System.out.println("You entered the " + nextRoom + ".");
+        }
+        return true;
+    }
+
+
+    // Aly: Allow the player to pick up items
+    if(command.toLowerCase().startsWith("take ")){
+        String itemName = command.substring(5).trim();
+
+        // Check the items in the current room
+        for(Item item : player.getCurrentRoom().getItems()){
+            if(item.getName().equalsIgnoreCase(itemName)){
+                player.addItem(item);
+                player.getCurrentRoom().getItems().remove(item);
+                System.out.println("YAY! You picked up the " + item.getName() + "!");
+                return true;
+            }
+        }
+
+        System.out.println("That item is not in this room.");
+        return true;
+    }
+
+
   return false;
  }
 }
