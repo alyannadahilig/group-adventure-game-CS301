@@ -15,7 +15,7 @@ A text-based adventure game written in Java. Players can explore different rooms
 - Included the new command in the `help` menu.
 
 ### Student B - Alyanna
-- Added Wild Berries in the Forest, Magic Lantern in the Tower, and Rare Pearl at the Lake.
+- Added Wild Berries in the Forest, Magic Lantern in the Tower, and Pink Pearl at the Lake.
 - Added a reputation attribute to the player.
 - Added a `map` command to display game locations.
 - Added a `go` command to travel between connected rooms.
@@ -45,9 +45,9 @@ After compiling, run:
 - `quit` - Exit the game.
 
 ## Known Issues
-- Players start with zero gold, and there is currently no way to collect more during gameplay.
+- Players start with zero gold and reputation, and there is currently no way to collect more during gameplay.
 - The three new rooms can be explored, but they don't have any additional activities or interactions yet.
-- Wild Berries, Magic Lantern, and Rare Pearl can be collected, but their special effects are not implemented yet.
+- Wild Berries, Magic Lantern, and Pink Pearl can be collected, but their special effects are not implemented yet.
 - The reputation attribute is not yet connected to gameplay actions.
 - Some rooms may not be reachable until additional exits are added.
 
