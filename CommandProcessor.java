@@ -34,9 +34,12 @@ public class CommandProcessor {
     // Aly: Display the map of the game world
     if(command.equalsIgnoreCase("map")){
         System.out.println("~~~ WORLD MAP ~~~");
-        System.out.println("Village - North: Forest");
+        System.out.println("Village - North: Forest, East: Castle, West: Marketplace");
         System.out.println("Forest - South: Village, East: Cave");
-        System.out.println("Cave - West: Forest");
+        System.out.println("Cave - Look for nearby exits");
+        System.out.println("Castle - West: Village, North: Garden");
+        System.out.println("Garden - South: Castle");
+        System.out.println("Marketplace - East: Village");
         System.out.println("Tower - Look for nearby exits");
         System.out.println("Lake - Look for nearby exits");
         return true;
