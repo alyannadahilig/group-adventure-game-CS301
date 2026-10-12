@@ -44,6 +44,16 @@ public class GameData {
   world.addRoom(castle);
   world.addRoom(garden);
   // TODO Student B item additions
+
+    // Food item found in the Forest
+    forest.getItems().add(new Item("Wild Berries", "Fresh berries that restore energy."));
+
+    // Useful item found in the Tower
+    tower.getItems().add(new Item("Magic Lantern", "A magical lantern that lights up dark areas."));
+
+    // Collectible item found at the Lake
+    lake.getItems().add(new Item("Pink Pearl", "A valuable pearl that can be collected for points."));
+
   // TODO Student C quest location additions
 
   return world;
