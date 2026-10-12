@@ -19,10 +19,17 @@ public class CommandProcessor {
    return true;
   }
   if(command.equalsIgnoreCase("help")){
-   System.out.println("look inventory map go take help quit");
+   System.out.println("look inventory score map go take help quit");
    return true;
   }
   // TODO: Students add commands HERE.
+  
+    // Jerome: Display player's score and gold amount
+    if(command.equalsIgnoreCase("score")){
+        System.out.println("Score: " + player.getScore());
+        System.out.println("Gold: " + player.getGold());
+        return true;
+   }
 
     // Aly: Display the map of the game world
     if(command.equalsIgnoreCase("map")){
@@ -32,7 +39,7 @@ public class CommandProcessor {
         System.out.println("Cave - West: Forest");
         System.out.println("Tower - Look for nearby exits");
         System.out.println("Lake - Look for nearby exits");
-    return true;
+        return true;
     }
 
     // Aly: Move the player to another room
@@ -66,7 +73,6 @@ public class CommandProcessor {
         System.out.println("That item is not in this room.");
         return true;
     }
-
 
   return false;
  }
