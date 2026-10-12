@@ -9,7 +9,7 @@ public class Game {
     World world=GameData.createWorld();
     Player player=new Player(world.getRoom("Village"));
     System.out.println("Welcome to Git Adventure");
-    System.out.println("Commands: look, inventory, map, go, take, help, quit");
+    System.out.println("Commands: look, inventory, map, go, take, score, help, quit");
     while(true){
       System.out.print("> ");
       String cmd=scanner.nextLine();
